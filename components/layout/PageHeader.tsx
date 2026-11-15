@@ -30,14 +30,12 @@ export function Breadcrumbs({ items, label }: { items: Crumb[]; label: string })
 }
 
 export function PageHeader({
-  eyebrow,
   title,
   intro,
   crumbs,
   crumbLabel,
   image,
 }: {
-  eyebrow?: string;
   title: string;
   intro?: string;
   crumbs?: Crumb[];
@@ -51,7 +49,6 @@ export function PageHeader({
         {/* Collection photos are portrait (3:4), so the frame is portrait too: nothing is cropped. */}
         <div className="mt-4 grid grid-cols-[1fr_7.5rem] items-center gap-4 overflow-hidden rounded-sm bg-sand p-4 xs:grid-cols-[1fr_9rem] sm:grid-cols-[1fr_12rem] md:grid-cols-[1fr_15rem] md:gap-10 md:p-6 lg:grid-cols-[1fr_17rem]">
           <div className="min-w-0 md:px-6">
-            {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
             <h1 className="display text-4xl xs:text-5xl md:text-7xl">{title}</h1>
             {intro && <p className="mt-3 max-w-lg text-sm leading-relaxed text-ink/80 md:mt-4 md:text-base">{intro}</p>}
           </div>
@@ -64,7 +61,6 @@ export function PageHeader({
     <header className="container-rm mt-6">
       {crumbs && crumbLabel && <Breadcrumbs items={crumbs} label={crumbLabel} />}
       <div className="mt-6 max-w-3xl">
-        {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
         <h1 className="display text-5xl md:text-7xl text-balance">{title}</h1>
         {intro && <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink/80">{intro}</p>}
       </div>

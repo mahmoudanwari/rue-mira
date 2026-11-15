@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import { Accent } from "@/components/ui/Accent";
 import { AssetImage } from "@/components/ui/AssetImage";
 import { CATEGORY_IDS, collectionImage } from "@/lib/catalog";
 import { useI18n } from "@/lib/i18n/client";
@@ -34,12 +35,13 @@ export function CategoryTiles() {
   const { t, href } = useI18n();
   return (
     <section aria-labelledby="cat-title" className="container-rm mt-20 md:mt-28">
-      <div className="mb-8 flex items-end justify-between gap-6">
-        <h2 id="cat-title" className="display text-4xl md:text-5xl">
-          {t.home.categoriesTitle}
+      <div className="mb-10 flex items-end justify-between gap-6 border-b border-line pb-6">
+        <h2 id="cat-title" className="display text-4xl md:text-[3.5rem]">
+          <Accent text={t.home.categoriesTitle} />
         </h2>
-        <Link href={href("/shop/")} className="link-underline hidden text-sm font-semibold sm:inline">
-          {t.common.viewAll}
+        <Link href={href("/shop/")} className="arrow-link hidden shrink-0 items-center gap-1.5 text-sm font-semibold sm:inline-flex">
+          <span className="link-underline">{t.common.viewAll}</span>
+          <ArrowUpRight size={15} className="arrow" aria-hidden="true" />
         </Link>
       </div>
       <ul className="-mx-4 flex snap-x snap-mandatory gap-3 relative overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 md:grid-cols-4 md:gap-4">

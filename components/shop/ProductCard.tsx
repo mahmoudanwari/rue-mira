@@ -174,7 +174,7 @@ export function ProductCard({
 
       <div className="mt-3 flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <h3 className="text-[0.9375rem] font-medium leading-snug">
+          <h3 className="display text-[1.3rem] !leading-[1.15]">
             <Link href={url} className="link-underline">
               {name}
             </Link>
@@ -196,7 +196,7 @@ export function ProductCard({
                 : t.common.outOfStock}
           </p>
         </div>
-        <p className="shrink-0 text-[0.9375rem] font-semibold tabular-nums">{money(product.price)}</p>
+        <p className="shrink-0 pt-0.5 text-[0.9375rem] font-medium tabular-nums">{money(product.price)}</p>
       </div>
     </article>
   );

@@ -29,7 +29,6 @@ export default async function CollectionPage({ params }: PageProps<"/[locale]/co
   return (
     <>
       <PageHeader
-        eyebrow={t.nav.collections}
         title={t.categories[category].label}
         intro={t.categories[category].blurb}
         image={collectionImage(category)}

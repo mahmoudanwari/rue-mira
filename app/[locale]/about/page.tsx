@@ -15,7 +15,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/about">) {
   const c = getContent(locale).about;
   return (
     <>
-      <PageHeader eyebrow={t.home.manifestoEyebrow} title={t.common.tagline} intro={c.intro} crumbs={[home, { label: t.pages.about }]} crumbLabel={t.product.breadcrumb} />
+      <PageHeader title={t.common.tagline} intro={c.intro} crumbs={[home, { label: t.pages.about }]} crumbLabel={t.product.breadcrumb} />
       <div className="container-rm mt-14 grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
         <div className="grid grid-cols-5 gap-4 self-start">
           <Reveal className="col-span-3">

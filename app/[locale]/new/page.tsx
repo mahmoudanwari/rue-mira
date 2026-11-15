@@ -19,7 +19,6 @@ export default async function NewPage({ params }: PageProps<"/[locale]/new">) {
   return (
     <>
       <PageHeader
-        eyebrow={t.nav.collections}
         title={t.categories["new-arrivals"].label}
         intro={t.categories["new-arrivals"].blurb}
         image={collectionImage("new-arrivals")}

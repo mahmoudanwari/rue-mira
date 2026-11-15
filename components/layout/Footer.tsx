@@ -41,7 +41,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
   ];
 
   return (
-    <footer className="mt-24 bg-ink text-bone">
+    <footer className="on-dark mt-24 overflow-hidden bg-ink text-bone">
       <div className="container-rm grid gap-12 py-16 lg:grid-cols-[1.3fr_2fr]">
         <div className="flex flex-col gap-5">
           <p className="display text-4xl tracking-[0.18em]">RUE MIRA</p>
@@ -114,6 +114,13 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
           </nav>
         </div>
       </div>
+      {/* Signature: the wordmark set edge to edge, cropped by the page like a masthead. */}
+      <p
+        aria-hidden="true"
+        className="display pointer-events-none -mb-[0.2em] select-none whitespace-nowrap text-center text-[18.5vw] leading-[0.85] tracking-[0.04em] text-bone/[0.08]"
+      >
+        RUE MIRA
+      </p>
     </footer>
   );
 }

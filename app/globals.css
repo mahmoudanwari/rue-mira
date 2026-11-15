@@ -29,6 +29,16 @@
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
     background: var(--color-bone);
+    /* Browser-drawn surfaces in the brand palette. */
+    scrollbar-color: var(--color-champagne) var(--color-bone);
+    accent-color: var(--color-burgundy);
+  }
+  input,
+  textarea {
+    caret-color: var(--color-burgundy);
+  }
+  a {
+    text-underline-offset: 0.22em;
   }
   @media (prefers-reduced-motion: reduce) {
     html {
@@ -112,6 +122,45 @@
     letter-spacing: -0.015em;
     line-height: 0.98;
   }
+  /* Headline accent: the last word leans into the italic cut. */
+  .accent-word {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--color-burgundy);
+  }
+  .on-dark .accent-word {
+    color: var(--color-rose);
+  }
+
+  /* Arrows that nudge forward when their link or button is hovered or focused. */
+  .arrow {
+    flex-shrink: 0;
+    transition: translate 0.35s var(--ease-editorial);
+  }
+  .group:hover .arrow,
+  .group:focus-visible .arrow,
+  .arrow-link:hover .arrow,
+  .arrow-link:focus-visible .arrow {
+    translate: 3px 0;
+  }
+
+  /* Printed-journal ornament: a fading hairline with a small burgundy lozenge. */
+  .ornament {
+    position: relative;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-line) 18%, var(--color-line) 82%, transparent);
+  }
+  .ornament::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    background: var(--color-burgundy);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
   .rule {
     height: 1px;
     background: var(--color-line);

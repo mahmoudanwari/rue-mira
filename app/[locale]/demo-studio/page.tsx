@@ -9,7 +9,6 @@ export default async function DemoStudioPage(props: PageProps<"/[locale]/demo-st
   return (
     <>
       <PageHeader
-        eyebrow={t.studio.localOnly}
         title={t.studio.title}
         intro={t.studio.intro}
         crumbs={[home, { label: t.studio.title }]}

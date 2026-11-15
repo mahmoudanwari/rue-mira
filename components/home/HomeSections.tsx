@@ -6,6 +6,7 @@ import { ArrowRight, Eye } from "lucide-react";
 import { useId, useState } from "react";
 import { LookImage } from "@/components/lookbook/LookCard";
 import { AssetImage } from "@/components/ui/AssetImage";
+import { Accent } from "@/components/ui/Accent";
 import { Reveal } from "@/components/ui/Reveal";
 import { IMAGE_MAP, type Product } from "@/lib/catalog";
 import type { Look } from "@/lib/catalog/lookbook";
@@ -14,16 +15,17 @@ import { useShop, useUI } from "@/lib/store";
 
 export function SectionHeading({ id, title, sub, link, linkLabel }: { id: string; title: string; sub?: string; link?: string; linkLabel?: string }) {
   return (
-    <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+    <div className="mb-10 flex flex-col gap-3 border-b border-line pb-6 sm:flex-row sm:items-end sm:justify-between">
       <div>
-        <h2 id={id} className="display text-4xl md:text-5xl">
-          {title}
+        <h2 id={id} className="display text-4xl text-balance md:text-[3.5rem]">
+          <Accent text={title} />
         </h2>
         {sub && <p className="mt-2 max-w-lg text-sm text-taupe">{sub}</p>}
       </div>
       {link && linkLabel && (
-        <Link href={link} className="link-underline inline-flex items-center gap-1.5 self-start text-sm font-semibold sm:self-auto">
-          {linkLabel} <ArrowRight size={15} aria-hidden="true" />
+        <Link href={link} className="arrow-link group inline-flex shrink-0 items-center gap-1.5 self-start text-sm font-semibold sm:self-auto">
+          <span className="link-underline">{linkLabel}</span>
+          <ArrowRight size={15} className="arrow" aria-hidden="true" />
         </Link>
       )}
     </div>
@@ -39,13 +41,13 @@ export function EditorialSplit() {
           <AssetImage src={IMAGE_MAP.campaigns["campaign-city-essentials"]} alt="" ratio="16 / 9" sizes="(min-width: 1024px) 60vw, 100vw" className="rounded-sm" />
         </Reveal>
         <Reveal delay={0.1} className="flex flex-col items-start gap-5">
-          <p className="eyebrow">{t.home.editorialEyebrow}</p>
           <h2 id="editorial-title" className="display text-5xl md:text-6xl text-balance">
-            {t.home.editorialTitle}
+            <Accent text={t.home.editorialTitle} />
           </h2>
           <p className="max-w-md leading-relaxed text-ink/80">{t.home.editorialBody}</p>
-          <Link href={href("/shop/?q=work")} className="btn btn-primary mt-2">
+          <Link href={href("/shop/?q=work")} className="btn btn-primary group mt-2">
             {t.home.editorialCta}
+            <ArrowRight size={16} className="arrow" aria-hidden="true" />
           </Link>
         </Reveal>
       </div>
@@ -96,7 +98,6 @@ export function Spotlight({ product: initial }: { product: Product }) {
           </div>
         </div>
         <Reveal className="flex flex-col items-start gap-5">
-          <p className="eyebrow">{t.home.spotlightEyebrow}</p>
           <h2 id="spotlight-title" className="display text-5xl md:text-7xl">
             {p.copy.name}
           </h2>
@@ -113,8 +114,9 @@ export function Spotlight({ product: initial }: { product: Product }) {
             <dd className="font-semibold tabular-nums">{money(p.price)}</dd>
           </dl>
           <div className="mt-2 flex flex-wrap gap-3">
-            <Link href={href(`/products/${p.slug}/`)} className="btn btn-primary">
+            <Link href={href(`/products/${p.slug}/`)} className="btn btn-primary group">
               {t.home.spotlightCta}
+              <ArrowRight size={16} className="arrow" aria-hidden="true" />
             </Link>
             <button type="button" className="btn btn-outline" onClick={() => ui.setQuickViewId(p.id)}>
               <Eye size={16} aria-hidden="true" /> {t.common.quickView}
@@ -137,15 +139,14 @@ export function WeekendEdit() {
   // The photo is 16:9. Phones show it at that shape with the text below (no cropping);
   // large screens use a 16:9 frame with the text over the photo.
   return (
-    <section aria-labelledby="weekend-title" className="relative mt-24 bg-ink text-white lg:mt-36 lg:bg-transparent">
+    <section aria-labelledby="weekend-title" className="on-dark relative mt-24 bg-ink text-white lg:mt-36 lg:bg-transparent">
       <div className="relative">
         <AssetImage src={IMAGE_MAP.campaigns["campaign-weekend-edit"]} alt="" ratio="16 / 9" sizes="100vw" />
         <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/65 via-ink/15 to-transparent lg:block" aria-hidden="true" />
         <div className="container-rm py-10 lg:absolute lg:inset-0 lg:flex lg:items-center lg:py-0">
           <Reveal className="max-w-lg">
-            <p className="eyebrow !text-white/85">{t.home.weekendEyebrow}</p>
-            <h2 id="weekend-title" className="display mt-3 text-5xl lg:text-6xl xl:text-7xl">
-              {t.home.weekendTitle}
+            <h2 id="weekend-title" className="display text-5xl lg:text-6xl xl:text-7xl">
+              <Accent text={t.home.weekendTitle} />
             </h2>
             <p className="mt-4 leading-relaxed text-white/90">{t.home.weekendBody}</p>
             <ul className="mt-7 flex flex-wrap gap-2">
@@ -193,7 +194,10 @@ export function AccessoryPromos() {
                 </div>
                 <div className="mt-4 flex items-baseline justify-between gap-4">
                   <h3 className="display text-3xl">{p.title}</h3>
-                  <span className="eyebrow shrink-0 transition-colors group-hover:text-burgundy">{t.categories[p.cat].label} →</span>
+                  <span className="arrow-link eyebrow inline-flex shrink-0 items-center gap-1 transition-colors group-hover:text-burgundy">
+                    {t.categories[p.cat].label}
+                    <ArrowRight size={13} className="arrow" aria-hidden="true" />
+                  </span>
                 </div>
               </Link>
             </Reveal>
@@ -231,14 +235,17 @@ export function Manifesto() {
   return (
     <section aria-labelledby="manifesto-title" className="container-rm mt-24 md:mt-40">
       <Reveal className="mx-auto max-w-4xl text-center">
-        <p className="eyebrow">{t.home.manifestoEyebrow}</p>
-        <h2 id="manifesto-title" className="display mt-5 text-5xl italic text-burgundy md:text-7xl text-balance">
-          {t.home.manifestoTitle}
+        {/* A hairline with a small burgundy lozenge: the brand's printed-journal ornament. */}
+        <div className="ornament mx-auto mb-10 max-w-xs" aria-hidden="true" />
+        <h2 id="manifesto-title" className="display text-5xl text-balance md:text-7xl">
+          <Accent text={t.home.manifestoTitle} />
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink/80">{t.home.manifestoBody}</p>
-        <Link href={href("/about/")} className="btn btn-outline mt-8">
+        <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-ink/80 text-pretty">{t.home.manifestoBody}</p>
+        <Link href={href("/about/")} className="btn btn-outline group mt-9">
           {t.home.manifestoCta}
+          <ArrowRight size={16} className="arrow" aria-hidden="true" />
         </Link>
+        <div className="ornament mx-auto mt-14 max-w-xs" aria-hidden="true" />
       </Reveal>
     </section>
   );

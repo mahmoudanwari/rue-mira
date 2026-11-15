@@ -19,7 +19,6 @@ export default async function LookbookPage({ params }: PageProps<"/[locale]/look
   return (
     <>
       <PageHeader
-        eyebrow={t.common.tagline}
         title={t.lookbook.title}
         intro={t.lookbook.intro}
         crumbs={[{ href: localePath(locale, "/"), label: t.nav.home }, { label: t.lookbook.title }]}
