@@ -23,6 +23,6 @@
 
 ## Next steps / open items
 
-- [ ] Confirm GitHub username and domain → add `public/CNAME`, set up Cloudflare DNS
+- [x] Deployed (2026-11-15): repo mahmoudanwari/rue-mira, GitHub Pages via Actions, custom domain rue-mira.mahmoudanwari.com set in Settings → Pages (no CNAME file, same as the other demos), Cloudflare CNAME rue-mira → mahmoudanwari.github.io (DNS only)
 - [ ] Run Lighthouse on the deployed site
 - [ ] Optional: automated reduced-motion and axe accessibility checks in E2E
