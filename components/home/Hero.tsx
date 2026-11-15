@@ -30,7 +30,7 @@ export function Hero() {
     <section ref={ref} className="relative -mt-16 h-[calc(100svh-2.25rem)] min-h-[34rem] overflow-hidden bg-ink text-white lg:-mt-[4.5rem] lg:max-h-[56rem]">
       <motion.div
         className="absolute inset-0"
-        style={{ y: imageY }}
+        style={{ y: imageY, transformOrigin: "50% 0%" }}
         initial={reduce ? false : { clipPath: "inset(12% 8% 12% 8%)", scale: 1.08 }}
         animate={{ clipPath: "inset(0% 0% 0% 0%)", scale: 1 }}
         transition={{ duration: 1.6, ease: EASE }}
@@ -48,7 +48,9 @@ export function Hero() {
               fetchPriority="high"
               loading="eager"
               onError={() => setStage((s) => (s === "webp" ? "png" : "missing"))}
-              className="h-full w-full object-cover object-[50%_30%] md:object-[70%_40%]"
+              // Anchored to the photo's top edge: on wide, short screens the 16:9 desktop photo is trimmed
+              // top and bottom, and the model's face sits near the top — so trim the pavement, not her head.
+              className="h-full w-full object-cover object-[50%_30%] md:object-[70%_0%]"
             />
           </picture>
         )}
