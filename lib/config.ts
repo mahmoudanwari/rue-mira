@@ -28,3 +28,6 @@ export function isLocale(value: string): value is Locale {
 export function assetUrl(path: string): string {
   return BASE_PATH + encodeURI(path);
 }
+
+/** Site credit shown in the footer, gateway and 404 page. */
+export const DESIGNER = { name: "Mahmoud Anwari", url: "https://mahmoudanwari.com" } as const;

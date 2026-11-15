@@ -321,6 +321,9 @@ const fr: Dictionary = {
     imagesNote: "Toutes les photos ont été générées par IA pour cette démo ; tous les modèles représentés sont adultes.",
     languages: "Langues",
     rights: "Marque fictive · Contenu de démo",
+    creditLabel: "Site web",
+    creditLine: "Conçu & développé par",
+    creditLink: "Voir le portfolio du concepteur (s’ouvre dans un nouvel onglet)",
   },
   pages: {
     about: "À propos",

@@ -319,6 +319,9 @@ const en = {
     imagesNote: "All photography is AI-generated for this demo; all models depicted are adults.",
     languages: "Languages",
     rights: "Fictional brand · Demo content",
+    creditLabel: "Website",
+    creditLine: "Designed & developed by",
+    creditLink: "Visit the designer's portfolio (opens in a new tab)",
   },
   pages: {
     about: "About",

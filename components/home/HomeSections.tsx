@@ -134,15 +134,17 @@ export function WeekendEdit() {
     { q: "occasion", label: t.home.moods.occasion },
     { q: "everyday", label: t.home.moods.everyday },
   ];
+  // The photo is 16:9. Phones show it at that shape with the text below (no cropping);
+  // large screens use a 16:9 frame with the text over the photo.
   return (
-    <section aria-labelledby="weekend-title" className="relative mt-24 md:mt-36">
-      <div className="relative min-h-[34rem] overflow-hidden md:min-h-[40rem]">
-        <AssetImage src={IMAGE_MAP.campaigns["campaign-weekend-edit"]} alt="" className="!absolute inset-0 h-full w-full" sizes="100vw" imgClassName="object-[60%_50%]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent md:bg-gradient-to-r md:from-ink/60 md:via-ink/10" aria-hidden="true" />
-        <div className="container-rm relative flex min-h-[34rem] flex-col justify-end py-12 text-white md:min-h-[40rem] md:justify-center">
+    <section aria-labelledby="weekend-title" className="relative mt-24 bg-ink text-white lg:mt-36 lg:bg-transparent">
+      <div className="relative">
+        <AssetImage src={IMAGE_MAP.campaigns["campaign-weekend-edit"]} alt="" ratio="16 / 9" sizes="100vw" />
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/65 via-ink/15 to-transparent lg:block" aria-hidden="true" />
+        <div className="container-rm py-10 lg:absolute lg:inset-0 lg:flex lg:items-center lg:py-0">
           <Reveal className="max-w-lg">
             <p className="eyebrow !text-white/85">{t.home.weekendEyebrow}</p>
-            <h2 id="weekend-title" className="display mt-3 text-5xl md:text-7xl">
+            <h2 id="weekend-title" className="display mt-3 text-5xl lg:text-6xl xl:text-7xl">
               {t.home.weekendTitle}
             </h2>
             <p className="mt-4 leading-relaxed text-white/90">{t.home.weekendBody}</p>
@@ -249,8 +251,8 @@ export function Newsletter() {
   const inputId = useId();
   return (
     <section aria-labelledby="nl-title" className="container-rm mt-24 md:mt-36">
-      <div className="grid overflow-hidden rounded-sm bg-rose-soft md:grid-cols-2">
-        <AssetImage src={IMAGE_MAP.campaigns["newsletter-still-life"]} alt="" className="min-h-64 md:min-h-full" sizes="(min-width: 768px) 50vw, 100vw" />
+      <div className="grid items-center overflow-hidden rounded-sm bg-rose-soft md:grid-cols-2">
+        <AssetImage src={IMAGE_MAP.campaigns["newsletter-still-life"]} alt="" ratio="16 / 9" className="self-center" sizes="(min-width: 768px) 50vw, 100vw" />
         <div className="flex flex-col justify-center gap-4 p-8 md:p-14">
           <h2 id="nl-title" className="display text-4xl md:text-5xl">
             {t.home.newsletterTitle}

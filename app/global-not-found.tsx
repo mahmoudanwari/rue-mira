@@ -43,7 +43,12 @@ export default function GlobalNotFound() {
               </a>
             </li>
           </ul>
-          <p className="text-xs text-taupe">Portfolio demo • No real purchases</p>
+          <p className="text-xs text-taupe">
+            Portfolio demo • No real purchases · Designed &amp; developed by{" "}
+            <a href="https://mahmoudanwari.com" target="_blank" rel="noopener" className="underline underline-offset-2">
+              Mahmoud Anwari
+            </a>
+          </p>
         </main>
       </body>
     </html>

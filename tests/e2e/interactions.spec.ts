@@ -78,3 +78,38 @@ test("a demo order reduces local demo stock", async ({ page }) => {
   await page.goto("/en/products/nia-pendant-necklace/");
   await expect(page.getByText("11 left in demo stock")).toBeVisible();
 });
+
+test("footer credits the designer in every language", async ({ page }) => {
+  const lines = { en: "Designed & developed by", nl: "Ontworpen & ontwikkeld door", fr: "Conçu & développé par" };
+  for (const [l, line] of Object.entries(lines)) {
+    await page.goto(`/${l}/`);
+    const credit = page.getByTestId("designer-credit");
+    await expect(credit).toContainText(line);
+    await expect(credit.getByRole("link", { name: /Mahmoud Anwari/ })).toHaveAttribute("href", "https://mahmoudanwari.com");
+  }
+  await page.goto("/");
+  await expect(page.getByRole("link", { name: "Mahmoud Anwari" })).toBeVisible();
+});
+
+for (const width of [390, 1440]) {
+  test(`banner, weekend and newsletter photos are not cropped @${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    const cropOf = (file: string) =>
+      page.evaluate((f) => {
+        const img = [...document.images].find((i) => (i.currentSrc || i.src).includes(f));
+        if (!img || !img.naturalWidth) return -1;
+        const b = img.getBoundingClientRect();
+        const ia = img.naturalWidth / img.naturalHeight, ba = b.width / b.height;
+        return Math.round((ia > ba ? 1 - ba / ia : 1 - ia / ba) * 100);
+      }, file);
+    await page.goto("/en/collections/dresses/");
+    await expect.poll(() => cropOf("65-category-dresses")).toBeGreaterThanOrEqual(0);
+    expect(await cropOf("65-category-dresses")).toBeLessThanOrEqual(10);
+    await page.goto("/en/");
+    for (const f of ["76-home-weekend-edit", "82-home-newsletter"]) {
+      await page.locator(`img[src*="${f}"]`).scrollIntoViewIfNeeded();
+      await expect.poll(() => cropOf(f)).toBeGreaterThanOrEqual(0);
+      expect(await cropOf(f), f).toBeLessThanOrEqual(10);
+    }
+  });
+}

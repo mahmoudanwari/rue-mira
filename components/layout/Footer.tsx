@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CATEGORY_IDS } from "@/lib/catalog";
-import { LOCALES, LOCALE_NAMES, type Locale } from "@/lib/config";
+import { DESIGNER, LOCALES, LOCALE_NAMES, type Locale } from "@/lib/config";
 import type { Dictionary } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n/paths";
 
@@ -51,6 +51,21 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
             <p className="eyebrow !text-bone/50">{t.footer.contactDemo}</p>
             <p className="mt-1 text-bone/80">{t.footer.contactLine}</p>
           </div>
+          <div className="border-t border-bone/15 pt-5" data-testid="designer-credit">
+            <p className="eyebrow !text-champagne">{t.footer.creditLabel}</p>
+            <p className="display mt-2 text-2xl text-bone">
+              {t.footer.creditLine}{" "}
+              <a
+                href={DESIGNER.url}
+                target="_blank"
+                rel="noopener"
+                className="underline decoration-rose/60 underline-offset-4 transition-colors hover:text-rose"
+                aria-label={`${DESIGNER.name} — ${t.footer.creditLink}`}
+              >
+                {DESIGNER.name}
+              </a>
+            </p>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
           {cols.map((col) => (
@@ -73,7 +88,10 @@ export function Footer({ locale, t }: { locale: Locale; t: Dictionary }) {
         <div className="container-rm flex flex-col gap-4 py-6 text-xs text-bone/60 md:flex-row md:items-center md:justify-between">
           <div className="space-y-1">
             <p>
-              {t.footer.rights} · {t.common.demoBadge}
+              {t.footer.rights} · {t.common.demoBadge} · {t.footer.creditLine}{" "}
+              <a href={DESIGNER.url} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
+                {DESIGNER.name}
+              </a>
             </p>
             <p>{t.footer.imagesNote}</p>
           </div>

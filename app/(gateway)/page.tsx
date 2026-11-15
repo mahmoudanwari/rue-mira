@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AssetImage } from "@/components/ui/AssetImage";
 import { IMAGE_MAP } from "@/lib/catalog";
-import { BASE_PATH } from "@/lib/config";
+import { BASE_PATH, DESIGNER } from "@/lib/config";
 
 const OPTIONS = [
   { locale: "en", name: "English", line: "Everyday, but never ordinary.", cta: "Enter the shop" },
@@ -59,6 +59,11 @@ export default function Gateway() {
           <p className="max-w-md text-xs leading-relaxed text-taupe">
             RUE MIRA is a fictional brand created for a web-design portfolio. Products, prices and policies are invented; no
             payments are processed and no personal data is collected.
+            <br />
+            Designed &amp; developed by{" "}
+            <a href={DESIGNER.url} target="_blank" rel="noopener" className="font-semibold text-ink underline underline-offset-2">
+              {DESIGNER.name}
+            </a>
           </p>
         </div>
       </main>

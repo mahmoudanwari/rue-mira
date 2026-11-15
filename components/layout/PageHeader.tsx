@@ -48,13 +48,14 @@ export function PageHeader({
     return (
       <header className="container-rm mt-6">
         {crumbs && crumbLabel && <Breadcrumbs items={crumbs} label={crumbLabel} />}
-        <div className="mt-4 grid items-end gap-6 overflow-hidden rounded-sm bg-sand md:grid-cols-[1fr_minmax(16rem,26rem)]">
-          <div className="p-6 pb-2 md:p-12">
+        {/* Collection photos are portrait (3:4), so the frame is portrait too: nothing is cropped. */}
+        <div className="mt-4 grid grid-cols-[1fr_7.5rem] items-center gap-4 overflow-hidden rounded-sm bg-sand p-4 xs:grid-cols-[1fr_9rem] sm:grid-cols-[1fr_12rem] md:grid-cols-[1fr_15rem] md:gap-10 md:p-6 lg:grid-cols-[1fr_17rem]">
+          <div className="min-w-0 md:px-6">
             {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
-            <h1 className="display text-5xl md:text-7xl">{title}</h1>
-            {intro && <p className="mt-4 max-w-lg leading-relaxed text-ink/80">{intro}</p>}
+            <h1 className="display text-4xl xs:text-5xl md:text-7xl">{title}</h1>
+            {intro && <p className="mt-3 max-w-lg text-sm leading-relaxed text-ink/80 md:mt-4 md:text-base">{intro}</p>}
           </div>
-          <AssetImage src={image} alt="" ratio="4 / 3" priority sizes="(min-width: 768px) 26rem, 100vw" imgClassName="object-[50%_30%]" />
+          <AssetImage src={image} alt="" ratio="3 / 4" priority sizes="(min-width: 1024px) 17rem, (min-width: 768px) 15rem, 9rem" className="rounded-sm" />
         </div>
       </header>
     );

@@ -321,6 +321,9 @@ const nl: Dictionary = {
     imagesNote: "Alle fotografie is voor deze demo met AI gemaakt; alle afgebeelde modellen zijn volwassen.",
     languages: "Talen",
     rights: "Fictief merk · Demo-inhoud",
+    creditLabel: "Website",
+    creditLine: "Ontworpen & ontwikkeld door",
+    creditLink: "Bekijk het portfolio van de ontwerper (opent in een nieuw tabblad)",
   },
   pages: {
     about: "Over ons",
