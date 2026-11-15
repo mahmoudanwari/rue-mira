@@ -189,7 +189,7 @@ export function DemoStudio() {
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-taupe" aria-hidden="true" />
           <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={t.studio.search} className="field !rounded-full !pl-9" />
         </label>
-        <div className="-mx-4 mt-4 overflow-x-auto px-4">
+        <div className="-mx-4 mt-4 relative overflow-x-auto px-4">
           <table className="w-full min-w-[52rem] text-sm" data-testid="studio-table">
             <thead>
               <tr className="border-b border-ink/20 text-left text-xs uppercase tracking-wider text-taupe">

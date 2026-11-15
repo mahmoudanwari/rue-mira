@@ -173,7 +173,7 @@ export function CompareTray() {
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           className="fixed inset-x-3 bottom-3 z-30 mx-auto flex max-w-xl items-center gap-3 rounded-2xl border border-line bg-bone/95 p-2.5 shadow-2xl backdrop-blur sm:bottom-5"
         >
-          <ul className="flex flex-1 gap-1.5 overflow-x-auto no-scrollbar">
+          <ul className="flex flex-1 gap-1.5 relative overflow-x-auto no-scrollbar">
             {items.map((p) => (
               <li key={p.id} className="relative shrink-0">
                 <AssetImage src={p.images[0]} alt={p.copy.name} ratio="3 / 4" className="w-11 rounded" sizes="44px" />

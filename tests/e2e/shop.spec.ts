@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 test.describe("languages", () => {
   test("gateway offers three languages and remembers the choice", async ({ page }) => {

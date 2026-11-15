@@ -42,7 +42,7 @@ export function CategoryTiles() {
           {t.common.viewAll}
         </Link>
       </div>
-      <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 md:grid-cols-4 md:gap-4">
+      <ul className="-mx-4 flex snap-x snap-mandatory gap-3 relative overflow-x-auto px-4 pb-2 no-scrollbar sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 md:grid-cols-4 md:gap-4">
         {TILES.map((c, i) => (
           <motion.li
             key={c}

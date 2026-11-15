@@ -14,7 +14,7 @@ export function OrderHistory({ orders }: { orders: DemoOrder[] }) {
   const fmt = new Intl.DateTimeFormat(INTL_LOCALE[locale], { dateStyle: "medium", timeStyle: "short" });
   if (!orders.length) return <p className="text-sm text-taupe">{t.confirmation.none}</p>;
   return (
-    <div className="overflow-x-auto">
+    <div className="relative overflow-x-auto">
       <table className="w-full min-w-[32rem] text-sm" data-testid="order-history">
         <thead>
           <tr className="border-b border-ink/20 text-left">

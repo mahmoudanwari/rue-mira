@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 test("quick add (one size) and quick view from product cards", async ({ page }) => {
   await page.goto("/en/collections/handbags/");

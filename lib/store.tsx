@@ -88,6 +88,8 @@ export function ShopProvider({ locale, children }: { locale: Locale; children: R
     setOverrides(readStore(KEYS.overrides[0], KEYS.overrides[1], (r) => sanitizeOverrides(r, SEED_PRODUCTS), {}));
     setOrders(readStore(KEYS.orders[0], KEYS.orders[1], validateOrders, []));
     setHydrated(true);
+    // Marks the page as interactive (used by end-to-end tests to avoid clicking too early).
+    document.documentElement.dataset.hydrated = "1";
     /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 

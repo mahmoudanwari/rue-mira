@@ -124,7 +124,7 @@ export function CheckoutFlow() {
         </p>
 
         <nav aria-label={fill(t.checkout.stepOf, { n: step + 1, total: STEP_KEYS.length })}>
-          <ol className="flex gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+          <ol className="flex gap-1.5 relative overflow-x-auto pb-1 no-scrollbar">
             {STEP_KEYS.map((k, i) => (
               <li key={k} className="flex-1">
                 <button

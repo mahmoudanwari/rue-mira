@@ -12,7 +12,7 @@ export function SizeGuideTables({ guide }: { guide: SiteContent["sizeGuide"] }) 
         ))}
       </div>
       {guide.tables.map((table) => (
-        <div key={table.caption} className="overflow-x-auto">
+        <div key={table.caption} className="relative overflow-x-auto">
           <table className="w-full min-w-[18rem] border-collapse text-sm">
             <caption className="mb-2 text-left font-semibold">{table.caption}</caption>
             <thead>

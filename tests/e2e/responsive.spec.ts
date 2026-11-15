@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 const WIDTHS = [360, 390, 768, 1024, 1440, 1920];
 const PAGES = ["/en/", "/nl/shop/", "/fr/products/esme-cropped-trench/", "/en/lookbook/", "/en/checkout/", "/en/demo-studio/"];
