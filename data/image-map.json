@@ -1,0 +1,88 @@
+{
+  "collections": {
+    "dresses": "/images/Category images/65-category-dresses.png",
+    "tops": "/images/Category images/66-category-tops-blouses.png",
+    "bottoms": "/images/Category images/67-category-jeans-trousers.png",
+    "outerwear": "/images/Category images/68-category-jackets-coats.png",
+    "handbags": "/images/Category images/69-category-bags.png",
+    "shoes": "/images/Category images/70-category-shoes.png",
+    "jewellery": "/images/Category images/71-category-jewellery.png",
+    "new-arrivals": "/images/Category images/72-home-featured-outfit.png"
+  },
+  "campaigns": {
+    "home-hero-desktop": "/images/Home page and campaign images/73-home-hero-desktop.png",
+    "home-hero-mobile": "/images/Home page and campaign images/74-home-hero-mobile.png",
+    "campaign-city-essentials": "/images/Home page and campaign images/75-home-editorial-city-style.png",
+    "campaign-weekend-edit": "/images/Home page and campaign images/76-home-weekend-edit.png",
+    "campaign-bag-feature": "/images/Home page and campaign images/77-home-bags-promotion.png",
+    "campaign-shoes-feature": "/images/Home page and campaign images/78-home-shoes-promotion.png",
+    "campaign-jewellery-feature": "/images/Home page and campaign images/79-home-jewellery-promotion.png",
+    "our-story-portrait": "/images/About in newsletter images/80-about-founder.png",
+    "our-story-studio": "/images/About in newsletter images/81-about-studio.png",
+    "newsletter-still-life": "/images/About in newsletter images/82-home-newsletter.png"
+  },
+  "lookbook": [
+    {
+      "id": "look-01",
+      "title_en": "City Morning",
+      "image": "/images/Lookbook images/83-lookbook-city-morning.png",
+      "product_ids": [
+        "rm-009",
+        "rm-012",
+        "rm-019"
+      ]
+    },
+    {
+      "id": "look-02",
+      "title_en": "Soft Tailoring",
+      "image": "/images/Lookbook images/84-lookbook-soft-tailoring.png",
+      "product_ids": [
+        "rm-008",
+        "rm-013",
+        "rm-018"
+      ]
+    },
+    {
+      "id": "look-03",
+      "title_en": "Weekend Light",
+      "image": "/images/Lookbook images/85-lookbook-weekend-light.png",
+      "product_ids": [
+        "rm-005",
+        "rm-022",
+        "rm-027"
+      ]
+    },
+    {
+      "id": "look-04",
+      "title_en": "After Hours",
+      "image": "/images/Lookbook images/86-lookbook-after-hours.png",
+      "product_ids": [
+        "rm-003",
+        "rm-025",
+        "rm-029"
+      ]
+    },
+    {
+      "id": "look-05",
+      "title_en": "Workday Edit",
+      "image": "/images/Lookbook images/87-lookbook-workday-edit.png",
+      "product_ids": [
+        "rm-007",
+        "rm-015",
+        "rm-016",
+        "rm-021"
+      ]
+    },
+    {
+      "id": "look-06",
+      "title_en": "Easy Sunday",
+      "image": "/images/Lookbook images/88-lookbook-easy-sunday.png",
+      "product_ids": [
+        "rm-011",
+        "rm-012",
+        "rm-026",
+        "rm-020"
+      ]
+    }
+  ]
+}

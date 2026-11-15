@@ -1,0 +1,1060 @@
+[
+  {
+    "id": "rm-001",
+    "slug": "solene-midi-dress",
+    "name_en": "Solène Midi Dress",
+    "category": "dresses",
+    "category_label_en": "Dresses",
+    "price_eur": 69,
+    "color_name_en": "Burgundy",
+    "color_hex": "#783248",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "linen-blend",
+    "description_en": "Sleeveless square-neck burgundy linen-blend midi dress, gently fitted bodice, waist darts, A-line skirt to mid calf, invisible side zipper, no print",
+    "tags": [
+      "occasion",
+      "everyday"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/01-rm-001-solene-midi-dress-main.png",
+      "/images/Product images/02-rm-001-solene-midi-dress-detail.png"
+    ]
+  },
+  {
+    "id": "rm-002",
+    "slug": "elia-shirt-dress",
+    "name_en": "Elia Shirt Dress",
+    "category": "dresses",
+    "category_label_en": "Dresses",
+    "price_eur": 58,
+    "color_name_en": "Cream",
+    "color_hex": "#EDE4D8",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "cotton poplin",
+    "description_en": "Warm cream crisp cotton-poplin collared shirt dress with matching fabric tie belt, concealed front buttons, rolled short sleeves, below-knee length",
+    "tags": [
+      "work",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/03-rm-002-elia-shirt-dress-main.png",
+      "/images/Product images/04-rm-002-elia-shirt-dress-detail.png"
+    ]
+  },
+  {
+    "id": "rm-003",
+    "slug": "liora-slip-dress",
+    "name_en": "Liora Slip Dress",
+    "category": "dresses",
+    "category_label_en": "Dresses",
+    "price_eur": 49,
+    "color_name_en": "Dusty Rose",
+    "color_hex": "#C48F98",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "material_en": "satin-finish woven",
+    "description_en": "Dusty rose satin-finish bias-cut slip dress, delicate adjustable spaghetti straps, softly draped neckline, below-knee hem, no embellishments",
+    "tags": [
+      "occasion",
+      "date"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 8,
+      "L": 5
+    },
+    "images": [
+      "/images/Product images/05-rm-003-liora-slip-dress-main.png",
+      "/images/Product images/06-rm-003-liora-slip-dress-detail.png"
+    ]
+  },
+  {
+    "id": "rm-004",
+    "slug": "noa-knit-dress",
+    "name_en": "Noa Knit Column Dress",
+    "category": "dresses",
+    "category_label_en": "Dresses",
+    "price_eur": 59,
+    "color_name_en": "Cocoa",
+    "color_hex": "#715144",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "fine ribbed viscose knit",
+    "description_en": "Cocoa brown fine-ribbed knit ankle-length column dress with short sleeves and high round neck, narrow side slit",
+    "tags": [
+      "everyday",
+      "work"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/07-rm-004-noa-knit-column-dress-main.png",
+      "/images/Product images/08-rm-004-noa-knit-column-dress-detail.png"
+    ]
+  },
+  {
+    "id": "rm-005",
+    "slug": "iris-tea-dress",
+    "name_en": "Iris Floral Tea Dress",
+    "category": "dresses",
+    "category_label_en": "Dresses",
+    "price_eur": 44,
+    "color_name_en": "Olive Floral",
+    "color_hex": "#6F7757",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "viscose",
+    "description_en": "Muted olive-green viscose tea dress, tiny ivory wildflower print, V neckline, three-quarter sleeves, softly gathered waist, calf-length skirt",
+    "tags": [
+      "weekend",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/09-rm-005-iris-floral-tea-dress-main.png",
+      "/images/Product images/10-rm-005-iris-floral-tea-dress-detail.png"
+    ]
+  },
+  {
+    "id": "rm-006",
+    "slug": "amara-wrap-dress",
+    "name_en": "Amara Wrap Dress",
+    "category": "dresses",
+    "category_label_en": "Dresses",
+    "price_eur": 62,
+    "color_name_en": "Midnight Navy",
+    "color_hex": "#253149",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "matte crepe",
+    "description_en": "Midnight navy matte crepe wrap midi dress, short flutter sleeves, V neckline, self-tie side waist and gentle asymmetric hem",
+    "tags": [
+      "occasion",
+      "work"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/11-rm-006-amara-wrap-dress-main.png",
+      "/images/Product images/12-rm-006-amara-wrap-dress-detail.png"
+    ]
+  },
+  {
+    "id": "rm-007",
+    "slug": "mina-ribbed-tee",
+    "name_en": "Mina Ribbed Tee",
+    "category": "tops",
+    "category_label_en": "Tops & Blouses",
+    "price_eur": 18,
+    "color_name_en": "Ivory",
+    "color_hex": "#F3EBDD",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "cotton rib",
+    "description_en": "Ivory soft cotton rib crew-neck fitted tee, short sleeves, subtle narrow vertical ribs, clean hem without logos",
+    "tags": [
+      "essentials",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/13-rm-007-mina-ribbed-tee-main.png",
+      "/images/Product images/14-rm-007-mina-ribbed-tee-detail.png"
+    ]
+  },
+  {
+    "id": "rm-008",
+    "slug": "camille-blouse",
+    "name_en": "Camille Satin Blouse",
+    "category": "tops",
+    "category_label_en": "Tops & Blouses",
+    "price_eur": 36,
+    "color_name_en": "Champagne",
+    "color_hex": "#D8C2A1",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "matte satin",
+    "description_en": "Champagne matte satin long sleeve blouse with modest spread collar, tiny tonal front buttons, relaxed drape, curved hem",
+    "tags": [
+      "work",
+      "occasion"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/15-rm-008-camille-satin-blouse-main.png",
+      "/images/Product images/16-rm-008-camille-satin-blouse-detail.png"
+    ]
+  },
+  {
+    "id": "rm-009",
+    "slug": "ava-oversized-shirt",
+    "name_en": "Ava Oversized Shirt",
+    "category": "tops",
+    "category_label_en": "Tops & Blouses",
+    "price_eur": 32,
+    "color_name_en": "Sky Blue",
+    "color_hex": "#A9C6D6",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "cotton poplin",
+    "description_en": "Pale sky blue cotton poplin oversized button-down shirt, long sleeves, pointed collar, dropped shoulders, single chest pocket",
+    "tags": [
+      "everyday",
+      "essentials"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/17-rm-009-ava-oversized-shirt-main.png",
+      "/images/Product images/18-rm-009-ava-oversized-shirt-detail.png"
+    ]
+  },
+  {
+    "id": "rm-010",
+    "slug": "mira-square-neck-top",
+    "name_en": "Mira Square-Neck Top",
+    "category": "tops",
+    "category_label_en": "Tops & Blouses",
+    "price_eur": 25,
+    "color_name_en": "Rosewood",
+    "color_hex": "#9D5964",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "stretch cotton",
+    "description_en": "Solid muted rosewood stretch cotton square-neck sleeveless top, clean wide straps, fitted silhouette, no print",
+    "tags": [
+      "essentials",
+      "weekend"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/19-rm-010-mira-square-neck-top-main.png",
+      "/images/Product images/20-rm-010-mira-square-neck-top-detail.png"
+    ]
+  },
+  {
+    "id": "rm-011",
+    "slug": "celeste-cardigan",
+    "name_en": "Céleste Fine-Knit Cardigan",
+    "category": "tops",
+    "category_label_en": "Tops & Blouses",
+    "price_eur": 39,
+    "color_name_en": "Oatmeal",
+    "color_hex": "#C3B5A0",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "fine cotton knit",
+    "description_en": "Oatmeal fine knit cropped cardigan with petite tonal buttons, round neckline, ribbed cuffs and hem, long sleeves",
+    "tags": [
+      "essentials",
+      "work"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/21-rm-011-celeste-fine-knit-cardigan-main.png",
+      "/images/Product images/22-rm-011-celeste-fine-knit-cardigan-detail.png"
+    ]
+  },
+  {
+    "id": "rm-012",
+    "slug": "alba-wide-leg-jeans",
+    "name_en": "Alba Wide-Leg Jeans",
+    "category": "bottoms",
+    "category_label_en": "Trousers & Skirts",
+    "price_eur": 52,
+    "color_name_en": "Washed Indigo",
+    "color_hex": "#557A96",
+    "sizes": [
+      "24",
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "material_en": "cotton denim",
+    "description_en": "Washed medium-indigo denim high-waist five-pocket jeans with wide straight legs, full length, contrast topstitch, no rips",
+    "tags": [
+      "denim",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "24": 0,
+      "26": 5,
+      "28": 7,
+      "30": 9,
+      "32": 6,
+      "34": 3
+    },
+    "images": [
+      "/images/Product images/23-rm-012-alba-wide-leg-jeans-main.png",
+      "/images/Product images/24-rm-012-alba-wide-leg-jeans-detail.png"
+    ]
+  },
+  {
+    "id": "rm-013",
+    "slug": "ren-tailored-trousers",
+    "name_en": "Ren Tailored Trousers",
+    "category": "bottoms",
+    "category_label_en": "Trousers & Skirts",
+    "price_eur": 45,
+    "color_name_en": "Sand",
+    "color_hex": "#C1AD91",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "woven suiting fabric",
+    "description_en": "Warm sand tailored high-waist wide-leg trousers with crisp front pleats, belt loops, slant pockets and clean hem",
+    "tags": [
+      "work",
+      "essentials"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/25-rm-013-ren-tailored-trousers-main.png",
+      "/images/Product images/26-rm-013-ren-tailored-trousers-detail.png"
+    ]
+  },
+  {
+    "id": "rm-014",
+    "slug": "sora-pleated-skirt",
+    "name_en": "Sora Pleated Midi Skirt",
+    "category": "bottoms",
+    "category_label_en": "Trousers & Skirts",
+    "price_eur": 42,
+    "color_name_en": "Soft Black",
+    "color_hex": "#252327",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "pleated polyester blend",
+    "description_en": "Soft black midi-length skirt with narrow pressed accordion pleats, smooth fitted waistband, flowy A-line shape",
+    "tags": [
+      "work",
+      "occasion"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/27-rm-014-sora-pleated-midi-skirt-main.png",
+      "/images/Product images/28-rm-014-sora-pleated-midi-skirt-detail.png"
+    ]
+  },
+  {
+    "id": "rm-015",
+    "slug": "june-straight-pants",
+    "name_en": "June Straight-Leg Pants",
+    "category": "bottoms",
+    "category_label_en": "Trousers & Skirts",
+    "price_eur": 40,
+    "color_name_en": "Espresso",
+    "color_hex": "#4A332A",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "cotton twill blend",
+    "description_en": "Deep espresso brown high-rise straight-leg twill pants, flat front, hidden hook closure, subtle side pockets, full length",
+    "tags": [
+      "work",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/29-rm-015-june-straight-leg-pants-main.png",
+      "/images/Product images/30-rm-015-june-straight-leg-pants-detail.png"
+    ]
+  },
+  {
+    "id": "rm-016",
+    "slug": "esme-cropped-trench",
+    "name_en": "Esme Cropped Trench",
+    "category": "outerwear",
+    "category_label_en": "Jackets & Outerwear",
+    "price_eur": 89,
+    "color_name_en": "Stone",
+    "color_hex": "#B4AA9C",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "cotton blend gabardine",
+    "description_en": "Stone beige cropped trench jacket with double-breasted tortoiseshell buttons, broad lapel, small storm flap and belt at waist",
+    "tags": [
+      "outerwear",
+      "work"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/31-rm-016-esme-cropped-trench-main.png",
+      "/images/Product images/32-rm-016-esme-cropped-trench-detail.png"
+    ]
+  },
+  {
+    "id": "rm-017",
+    "slug": "nola-quilted-jacket",
+    "name_en": "Nola Quilted Jacket",
+    "category": "outerwear",
+    "category_label_en": "Jackets & Outerwear",
+    "price_eur": 72,
+    "color_name_en": "Olive",
+    "color_hex": "#6D7352",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "quilted cotton-poly blend",
+    "description_en": "Muted olive lightweight diamond-quilted boxy jacket, contrast narrow cord collar, snap buttons, two patch pockets",
+    "tags": [
+      "outerwear",
+      "weekend"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/33-rm-017-nola-quilted-jacket-main.png",
+      "/images/Product images/34-rm-017-nola-quilted-jacket-detail.png"
+    ]
+  },
+  {
+    "id": "rm-018",
+    "slug": "blair-structured-blazer",
+    "name_en": "Blair Soft Blazer",
+    "category": "outerwear",
+    "category_label_en": "Jackets & Outerwear",
+    "price_eur": 95,
+    "color_name_en": "Charcoal",
+    "color_hex": "#4C4C50",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material_en": "soft woven suiting",
+    "description_en": "Charcoal grey lightly structured single-breasted blazer, one dark button, notched lapels, two welt pockets, hip length",
+    "tags": [
+      "work",
+      "occasion"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "XS": 3,
+      "S": 6,
+      "M": 9,
+      "L": 7,
+      "XL": 4
+    },
+    "images": [
+      "/images/Product images/35-rm-018-blair-soft-blazer-main.png",
+      "/images/Product images/36-rm-018-blair-soft-blazer-detail.png"
+    ]
+  },
+  {
+    "id": "rm-019",
+    "slug": "cleo-mini-bag",
+    "name_en": "Cleo Mini Shoulder Bag",
+    "category": "handbags",
+    "category_label_en": "Handbags",
+    "price_eur": 38,
+    "color_name_en": "Oxblood",
+    "color_hex": "#743243",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "smooth vegan leather",
+    "description_en": "Small smooth oxblood faux-leather crescent shoulder bag, single short strap, minimal silver zipper, no logo or hardware studs",
+    "tags": [
+      "accessories",
+      "everyday"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/37-rm-019-cleo-mini-shoulder-bag-main.png",
+      "/images/Product images/38-rm-019-cleo-mini-shoulder-bag-detail.png"
+    ]
+  },
+  {
+    "id": "rm-020",
+    "slug": "talia-canvas-tote",
+    "name_en": "Talia Canvas Tote",
+    "category": "handbags",
+    "category_label_en": "Handbags",
+    "price_eur": 27,
+    "color_name_en": "Warm Ivory",
+    "color_hex": "#E8E1D0",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "heavy cotton canvas",
+    "description_en": "Warm ivory heavy canvas open-top rectangular tote, long woven handles, one interior pocket, no print, no lettering",
+    "tags": [
+      "accessories",
+      "weekend"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/39-rm-020-talia-canvas-tote-main.png",
+      "/images/Product images/40-rm-020-talia-canvas-tote-detail.png"
+    ]
+  },
+  {
+    "id": "rm-021",
+    "slug": "lumi-crossbody",
+    "name_en": "Lumi Crossbody Bag",
+    "category": "handbags",
+    "category_label_en": "Handbags",
+    "price_eur": 42,
+    "color_name_en": "Taupe",
+    "color_hex": "#9B8C82",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "pebbled vegan leather",
+    "description_en": "Medium taupe pebbled faux-leather rectangular crossbody bag, slim adjustable strap, clean rounded corners, top zip",
+    "tags": [
+      "accessories",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/41-rm-021-lumi-crossbody-bag-main.png",
+      "/images/Product images/42-rm-021-lumi-crossbody-bag-detail.png"
+    ]
+  },
+  {
+    "id": "rm-022",
+    "slug": "ivy-woven-shopper",
+    "name_en": "Ivy Woven Shopper",
+    "category": "handbags",
+    "category_label_en": "Handbags",
+    "price_eur": 34,
+    "color_name_en": "Natural Straw",
+    "color_hex": "#C6A876",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "woven raffia-style fiber",
+    "description_en": "Natural tan woven raffia-style large shopper bag, two rounded woven handles, unlined open top, no pattern or label",
+    "tags": [
+      "accessories",
+      "weekend"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/43-rm-022-ivy-woven-shopper-main.png",
+      "/images/Product images/44-rm-022-ivy-woven-shopper-detail.png"
+    ]
+  },
+  {
+    "id": "rm-023",
+    "slug": "aria-satchel",
+    "name_en": "Aria Structured Satchel",
+    "category": "handbags",
+    "category_label_en": "Handbags",
+    "price_eur": 65,
+    "color_name_en": "Chocolate",
+    "color_hex": "#5A3E31",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "smooth vegan leather",
+    "description_en": "Structured small chocolate faux-leather satchel with trapezoid body, rolled top handle, detachable slim long strap, brushed gold clasp",
+    "tags": [
+      "accessories",
+      "work"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/45-rm-023-aria-structured-satchel-main.png",
+      "/images/Product images/46-rm-023-aria-structured-satchel-detail.png"
+    ]
+  },
+  {
+    "id": "rm-024",
+    "slug": "elle-ballet-flats",
+    "name_en": "Elle Ballet Flats",
+    "category": "shoes",
+    "category_label_en": "Shoes",
+    "price_eur": 39,
+    "color_name_en": "Black",
+    "color_hex": "#1D1B1C",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "material_en": "smooth vegan leather",
+    "description_en": "Pair of soft black faux-leather classic round-toe ballet flats with tiny flat bow at vamp, slim flexible sole",
+    "tags": [
+      "shoes",
+      "essentials"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "36": 0,
+      "37": 5,
+      "38": 7,
+      "39": 9,
+      "40": 6,
+      "41": 3
+    },
+    "images": [
+      "/images/Product images/47-rm-024-elle-ballet-flats-main.png",
+      "/images/Product images/48-rm-024-elle-ballet-flats-detail.png"
+    ]
+  },
+  {
+    "id": "rm-025",
+    "slug": "sienna-slingbacks",
+    "name_en": "Sienna Slingback Heels",
+    "category": "shoes",
+    "category_label_en": "Shoes",
+    "price_eur": 59,
+    "color_name_en": "Burgundy",
+    "color_hex": "#7A3348",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "material_en": "smooth vegan leather",
+    "description_en": "Pair of burgundy faux-leather pointed-toe slingback kitten heels, adjustable buckle strap, heel approx 4 cm",
+    "tags": [
+      "shoes",
+      "occasion"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "36": 0,
+      "37": 5,
+      "38": 7,
+      "39": 9,
+      "40": 6,
+      "41": 3
+    },
+    "images": [
+      "/images/Product images/49-rm-025-sienna-slingback-heels-main.png",
+      "/images/Product images/50-rm-025-sienna-slingback-heels-detail.png"
+    ]
+  },
+  {
+    "id": "rm-026",
+    "slug": "nova-sneakers",
+    "name_en": "Nova Low-Top Sneakers",
+    "category": "shoes",
+    "category_label_en": "Shoes",
+    "price_eur": 49,
+    "color_name_en": "Off-White",
+    "color_hex": "#EEE8DB",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "material_en": "matte vegan leather",
+    "description_en": "Pair of off-white minimal low-top sneakers in matte faux leather with stitched panels, cream laces, light tan rubber sole, no logo",
+    "tags": [
+      "shoes",
+      "everyday"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "36": 0,
+      "37": 5,
+      "38": 7,
+      "39": 9,
+      "40": 6,
+      "41": 3
+    },
+    "images": [
+      "/images/Product images/51-rm-026-nova-low-top-sneakers-main.png",
+      "/images/Product images/52-rm-026-nova-low-top-sneakers-detail.png"
+    ]
+  },
+  {
+    "id": "rm-027",
+    "slug": "mae-sandals",
+    "name_en": "Mae Block-Heel Sandals",
+    "category": "shoes",
+    "category_label_en": "Shoes",
+    "price_eur": 45,
+    "color_name_en": "Tan",
+    "color_hex": "#B78358",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "material_en": "smooth vegan leather",
+    "description_en": "Pair of warm tan minimalist sandals with two thin front straps, adjustable ankle strap and chunky low 5 cm block heel",
+    "tags": [
+      "shoes",
+      "weekend"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "36": 0,
+      "37": 5,
+      "38": 7,
+      "39": 9,
+      "40": 6,
+      "41": 3
+    },
+    "images": [
+      "/images/Product images/53-rm-027-mae-block-heel-sandals-main.png",
+      "/images/Product images/54-rm-027-mae-block-heel-sandals-detail.png"
+    ]
+  },
+  {
+    "id": "rm-028",
+    "slug": "cora-ankle-boots",
+    "name_en": "Cora Suede Ankle Boots",
+    "category": "shoes",
+    "category_label_en": "Shoes",
+    "price_eur": 79,
+    "color_name_en": "Chocolate",
+    "color_hex": "#66483A",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "material_en": "faux suede",
+    "description_en": "Pair of chocolate faux-suede ankle boots with softly rounded almond toe, small side zipper and stable 4 cm block heel",
+    "tags": [
+      "shoes",
+      "outerwear"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "36": 0,
+      "37": 5,
+      "38": 7,
+      "39": 9,
+      "40": 6,
+      "41": 3
+    },
+    "images": [
+      "/images/Product images/55-rm-028-cora-suede-ankle-boots-main.png",
+      "/images/Product images/56-rm-028-cora-suede-ankle-boots-detail.png"
+    ]
+  },
+  {
+    "id": "rm-029",
+    "slug": "lyra-hoop-earrings",
+    "name_en": "Lyra Hoop Earrings",
+    "category": "jewellery",
+    "category_label_en": "Jewellery",
+    "price_eur": 18,
+    "color_name_en": "Warm Gold",
+    "color_hex": "#C6A15D",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "gold-tone plated metal",
+    "description_en": "Pair of small chunky brushed warm-gold-tone oval hoop earrings with discreet hinge closure, each about 18 mm",
+    "tags": [
+      "jewellery",
+      "essentials"
+    ],
+    "is_new": true,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/57-rm-029-lyra-hoop-earrings-main.png",
+      "/images/Product images/58-rm-029-lyra-hoop-earrings-detail.png"
+    ]
+  },
+  {
+    "id": "rm-030",
+    "slug": "nia-pendant-necklace",
+    "name_en": "Nia Pendant Necklace",
+    "category": "jewellery",
+    "category_label_en": "Jewellery",
+    "price_eur": 22,
+    "color_name_en": "Silver",
+    "color_hex": "#B4BCC3",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "silver-tone metal",
+    "description_en": "Delicate polished silver-tone fine cable chain with a tiny smooth teardrop pendant, adjustable length 40–45 cm",
+    "tags": [
+      "jewellery",
+      "essentials"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/59-rm-030-nia-pendant-necklace-main.png",
+      "/images/Product images/60-rm-030-nia-pendant-necklace-detail.png"
+    ]
+  },
+  {
+    "id": "rm-031",
+    "slug": "eden-stacking-rings",
+    "name_en": "Eden Stacking Rings",
+    "category": "jewellery",
+    "category_label_en": "Jewellery",
+    "price_eur": 16,
+    "color_name_en": "Gold",
+    "color_hex": "#D4AF69",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "gold-tone plated metal",
+    "description_en": "Set of three delicate warm-gold-tone slim stacking rings: one plain, one softly hammered, one tiny beaded texture",
+    "tags": [
+      "jewellery",
+      "weekend"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/61-rm-031-eden-stacking-rings-main.png",
+      "/images/Product images/62-rm-031-eden-stacking-rings-detail.png"
+    ]
+  },
+  {
+    "id": "rm-032",
+    "slug": "sol-pearl-bracelet",
+    "name_en": "Sol Pearl Bracelet",
+    "category": "jewellery",
+    "category_label_en": "Jewellery",
+    "price_eur": 19,
+    "color_name_en": "Pearl Ivory",
+    "color_hex": "#EAE2D4",
+    "sizes": [
+      "One Size"
+    ],
+    "material_en": "faux pearl and gold-tone metal",
+    "description_en": "Delicate bracelet of tiny irregular ivory faux pearls alternating with subtle gold-tone spacer beads, small clasp",
+    "tags": [
+      "jewellery",
+      "occasion"
+    ],
+    "is_new": false,
+    "stock_by_size": {
+      "One Size": 12
+    },
+    "images": [
+      "/images/Product images/63-rm-032-sol-pearl-bracelet-main.png",
+      "/images/Product images/64-rm-032-sol-pearl-bracelet-detail.png"
+    ]
+  }
+]

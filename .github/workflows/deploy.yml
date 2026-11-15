@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer push cancels an older in-progress build.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Quality checks
+        run: |
+          npm run lint
+          npm run typecheck
+          npm run test
+          npm run assets:check
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build static site
+        run: npm run build
+        env:
+          # Custom subdomain at the root: keep the base path empty.
+          # For a username.github.io/<repo>/ preview without a custom domain, set NEXT_PUBLIC_BASE_PATH: /<repo>
+          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL || 'https://rue-mira.mahmoudanwari.com' }}
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
