@@ -43,4 +43,7 @@ Status as of 2026-11-15. "Unit" = Vitest (`tests/unit`), "E2E" = Playwright agai
 | Mobile menu | – | ✅ | – | |
 | 404 page | – | ✅ | – | Status 404 from `404.html` |
 | Reduced motion | – | – | partial | `MotionConfig reducedMotion="user"` + CSS override; not automated |
+| Designer credit (EN/NL/FR) linking to mahmoudanwari.com | – | ✅ | ✅ | Footer, gateway, 404 |
+| Banner, weekend and newsletter photos cropped ≤ 10 % (390 + 1440 px) | – | ✅ | ✅ | |
+| Whole suite against the live site (`E2E_BASE_URL`) | – | ✅ | – | 26 tests, run twice: 52 / 52 |
 | Lighthouse ≥ 90 | – | – | not run | WebP copies remove the main risk (image weight); not measured yet |
