@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
-import { Check, X } from "lucide-react";
+import { ArrowRight, Check, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { BagLines, FreeShippingMeter, TotalsTable, useBag } from "@/components/checkout/BagContents";
 import { Gallery } from "@/components/product/Gallery";
@@ -147,7 +147,7 @@ export function QuickView() {
             <p className="text-sm leading-relaxed text-ink/80">{p.copy.description}</p>
             <PurchasePanel product={p} compact />
             <Link href={href(`/products/${p.slug}/`)} onClick={() => ui.setQuickViewId(null)} className="link-underline self-start text-sm font-semibold">
-              {t.common.viewProduct} →
+              {t.common.viewProduct} <ArrowRight size={14} className="arrow ml-1 inline" aria-hidden="true" />
             </Link>
           </div>
         </div>

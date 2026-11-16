@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { AssetImage } from "@/components/ui/AssetImage";
@@ -38,8 +39,9 @@ export default async function JournalPage(props: PageProps<"/[locale]/journal">)
                 </Link>
               </h2>
               <p className="mt-3 max-w-lg leading-relaxed text-ink/80">{s.dek}</p>
-              <Link href={localePath(locale, `/journal/${s.slug}/`)} className="link-underline mt-4 inline-block text-sm font-semibold">
-                {c.readMore} →
+              <Link href={localePath(locale, `/journal/${s.slug}/`)} className="arrow-link mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
+                <span className="link-underline">{c.readMore}</span>
+                <ArrowRight size={15} className="arrow" aria-hidden="true" />
               </Link>
             </article>
           </li>

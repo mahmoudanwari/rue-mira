@@ -70,7 +70,7 @@ export function ProductCard({
 
         <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-1.5">
           {product.isNew && (
-            <span className="rounded-full bg-bone/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em]">
+            <span className="rounded-full bg-bone/90 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.16em] md:px-2.5 md:py-1 md:text-[10px]">
               {t.common.newLabel}
             </span>
           )}
@@ -81,13 +81,14 @@ export function ProductCard({
           )}
         </div>
 
-        <div className="absolute right-2 top-2 flex flex-col gap-1">
+        {/* Laptop/desktop: heart + compare in the top corner. Phones use the bottom row instead, so faces stay clear. */}
+        <div className="absolute right-2 top-2 hidden flex-col gap-1 md:flex">
           <button
             type="button"
             onClick={() => actions.toggleWishlist(product.id)}
             aria-pressed={inWishlist}
             aria-label={`${inWishlist ? t.common.wishlistRemove : t.common.wishlistAdd}: ${name}`}
-            className="icon-btn bg-bone/85 backdrop-blur hover:bg-bone"
+            className="icon-btn !h-9 !w-9 bg-bone/85 backdrop-blur hover:bg-bone"
           >
             <motion.span key={String(inWishlist)} initial={{ scale: 0.6 }} animate={{ scale: 1 }} className="inline-flex">
               <Heart
@@ -104,7 +105,7 @@ export function ProductCard({
             aria-pressed={inCompare}
             aria-label={`${inCompare ? t.common.compareRemove : t.common.compareAdd}: ${name}`}
             title={!inCompare && shop.compare.length >= 4 ? t.common.compareFull : undefined}
-            className={`icon-btn backdrop-blur transition-opacity md:opacity-0 md:group-hover:opacity-100 md:focus-visible:opacity-100 ${
+            className={`icon-btn !h-9 !w-9 backdrop-blur transition-opacity md:opacity-0 md:group-hover:opacity-100 md:focus-visible:opacity-100 ${
               inCompare ? "bg-ink text-bone md:opacity-100" : "bg-bone/85 hover:bg-bone"
             }`}
           >
@@ -145,7 +146,38 @@ export function ProductCard({
               </motion.div>
             )}
           </AnimatePresence>
-          <div className="flex gap-1.5 transition-all duration-300 md:translate-y-2 md:opacity-0 md:group-focus-within:translate-y-0 md:group-focus-within:opacity-100 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+          {/* Phones: three compact round buttons in the bottom corner, over the hem rather than the face. */}
+          <div className="flex justify-end gap-1.5 md:hidden">
+            <button
+              type="button"
+              onClick={quickAdd}
+              disabled={soldOut}
+              aria-expanded={isOneSize(product) ? undefined : picking}
+              aria-controls={isOneSize(product) ? undefined : sizesId}
+              className="icon-btn !h-10 !w-10 bg-bone/90 shadow-sm backdrop-blur disabled:opacity-50"
+              aria-label={`${t.common.quickAdd}: ${name}`}
+            >
+              <Plus size={17} aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => ui.setQuickViewId(product.id)}
+              className="icon-btn !h-10 !w-10 bg-bone/90 shadow-sm backdrop-blur"
+              aria-label={`${t.common.quickView}: ${name}`}
+            >
+              <Eye size={17} strokeWidth={1.5} aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => actions.toggleWishlist(product.id)}
+              aria-pressed={inWishlist}
+              aria-label={`${inWishlist ? t.common.wishlistRemove : t.common.wishlistAdd}: ${name}`}
+              className="icon-btn !h-10 !w-10 bg-bone/90 shadow-sm backdrop-blur"
+            >
+              <Heart size={17} strokeWidth={1.5} className={inWishlist ? "fill-burgundy text-burgundy" : ""} aria-hidden="true" />
+            </button>
+          </div>
+          <div className="hidden gap-1.5 transition-all duration-300 md:flex md:translate-y-2 md:opacity-0 md:group-focus-within:translate-y-0 md:group-focus-within:opacity-100 md:group-hover:translate-y-0 md:group-hover:opacity-100">
             <button
               type="button"
               onClick={quickAdd}
@@ -172,13 +204,16 @@ export function ProductCard({
         </div>
       </div>
 
-      <div className="mt-3 flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <h3 className="display text-[1.3rem] !leading-[1.15]">
+      <div className="mt-3">
+        <div className="flex flex-col gap-0.5 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+          <h3 className="display min-w-0 text-[1.2rem] !leading-[1.15] sm:text-[1.3rem]">
             <Link href={url} className="link-underline">
               {name}
             </Link>
           </h3>
+          <p className="shrink-0 text-[0.9375rem] font-medium tabular-nums sm:pt-0.5">{money(product.price)}</p>
+        </div>
+        <div>
           <p className="mt-1 flex items-center gap-1.5 text-xs text-taupe">
             <span
               className="inline-block h-3 w-3 shrink-0 rounded-full ring-1 ring-ink/15"
@@ -196,7 +231,6 @@ export function ProductCard({
                 : t.common.outOfStock}
           </p>
         </div>
-        <p className="shrink-0 pt-0.5 text-[0.9375rem] font-medium tabular-nums">{money(product.price)}</p>
       </div>
     </article>
   );

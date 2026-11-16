@@ -113,3 +113,36 @@ for (const width of [390, 1440]) {
     }
   });
 }
+
+test("phones: product-card buttons stay off the top (face) area of the photo", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/en/shop/");
+  const card = page.getByRole("article").first();
+  const img = await card.locator("img").first().boundingBox();
+  for (const btn of await card.getByRole("button").all()) {
+    const b = await btn.boundingBox();
+    if (!b) continue;
+    expect(b.y, "button over the upper half of the photo").toBeGreaterThan(img!.y + img!.height * 0.5);
+  }
+});
+
+test("phones: the hero headline starts below the model's face", async ({ page }) => {
+  for (const [w, h] of [[360, 740], [390, 844], [430, 932]] as const) {
+    await page.setViewportSize({ width: w, height: h });
+    await page.goto("/nl/");
+    await page.waitForTimeout(1600); // let the headline reveal finish
+    const photo = await page.locator("main section").first().locator("img").first().boundingBox();
+    const h1 = await page.getByRole("heading", { level: 1 }).boundingBox();
+    // The face sits in the top ~35% of the 4:5 phone photo.
+    expect(h1!.y, `${w}x${h}`).toBeGreaterThan(photo!.y + photo!.height * 0.45);
+  }
+});
+
+test("laptops: the main product photo fits on screen", async ({ page }) => {
+  for (const [w, h] of [[1280, 720], [1366, 768], [1440, 900]] as const) {
+    await page.setViewportSize({ width: w, height: h });
+    await page.goto("/fr/products/esme-cropped-trench/");
+    const box = await page.locator('section[aria-roledescription="carousel"] [aria-roledescription="slide"]').boundingBox();
+    expect(box!.y + box!.height, `${w}x${h}`).toBeLessThanOrEqual(h);
+  }
+});

@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { AssetImage } from "@/components/ui/AssetImage";
 import { IMAGE_MAP } from "@/lib/catalog";
@@ -50,7 +51,10 @@ export default function Gateway() {
                       <span className="display block text-4xl transition-colors group-hover:text-burgundy">{o.name}</span>
                       <span className="mt-1 block text-sm text-taupe">{o.line}</span>
                     </span>
-                    <span className="btn btn-outline btn-sm shrink-0 group-hover:bg-ink group-hover:text-bone">{o.cta} →</span>
+                    <span className="btn btn-outline btn-sm shrink-0 group-hover:bg-ink group-hover:text-bone">
+                      {o.cta}
+                      <ArrowRight size={14} className="arrow" aria-hidden="true" />
+                    </span>
                   </Link>
                 </li>
               ))}

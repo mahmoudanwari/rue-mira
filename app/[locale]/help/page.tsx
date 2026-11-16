@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { getContent } from "@/lib/content";
@@ -35,8 +35,9 @@ export default async function HelpPage(props: PageProps<"/[locale]/help">) {
           <ul className="space-y-3 text-sm">
             {links.map((l) => (
               <li key={l.href}>
-                <Link href={localePath(locale, l.href)} className="link-underline font-semibold">
-                  {l.label} →
+                <Link href={localePath(locale, l.href)} className="arrow-link inline-flex items-center gap-1.5 font-semibold">
+                  <span className="link-underline">{l.label}</span>
+                  <ArrowRight size={15} className="arrow" aria-hidden="true" />
                 </Link>
               </li>
             ))}

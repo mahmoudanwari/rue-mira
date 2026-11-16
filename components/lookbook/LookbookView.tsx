@@ -28,11 +28,9 @@ export function LookbookView({ looks }: { looks: Look[] }) {
                 <LookImage look={look} sizes="(min-width: 768px) 45vw, 100vw" priority={i === 0} />
               </Reveal>
               <Reveal delay={0.1} className="md:sticky md:top-28">
-                <p className="eyebrow">
-                  {t.lookbook.title} · 0{i + 1}
-                </p>
-                <h2 id={`${look.id}-title`} className="display mt-3 text-5xl md:text-6xl">
+                <h2 id={`${look.id}-title`} className="display text-5xl md:text-6xl">
                   {look.title}
+                  <span className="ml-3 align-top font-sans text-sm font-medium tabular-nums text-taupe">0{i + 1}</span>
                 </h2>
                 <p className="mt-4 max-w-md leading-relaxed text-ink/80">{look.note}</p>
                 <h3 className="eyebrow mb-3 mt-8 !text-ink">{t.lookbook.piecesInLook}</h3>

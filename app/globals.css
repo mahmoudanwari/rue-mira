@@ -124,6 +124,7 @@
   }
   /* Headline accent: the last word leans into the italic cut. */
   .accent-word {
+    white-space: nowrap;
     font-style: italic;
     font-weight: 500;
     color: var(--color-burgundy);
@@ -159,6 +160,10 @@
     height: 7px;
     background: var(--color-burgundy);
     transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .first-cap::first-letter {
+    text-transform: uppercase;
   }
 
   .rule {

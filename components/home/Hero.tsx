@@ -27,9 +27,11 @@ export function Hero() {
   const words = t.home.heroTitle.split(" ");
 
   return (
-    <section ref={ref} className="relative -mt-16 h-[calc(100svh-2.25rem)] min-h-[34rem] overflow-hidden bg-ink text-white lg:-mt-[4.5rem] lg:max-h-[56rem]">
+    // Phones: the 4:5 photo is shown whole and the headline starts over the dress, below her face.
+    // Tablets and up: full-screen photo with the text beside the model.
+    <section ref={ref} className="relative -mt-16 overflow-hidden bg-ink text-white md:h-[calc(100svh-2.25rem)] md:min-h-[34rem] lg:-mt-[4.5rem] lg:max-h-[56rem]">
       <motion.div
-        className="absolute inset-0"
+        className="relative aspect-[4/5] md:absolute md:inset-0 md:aspect-auto"
         style={{ y: imageY, transformOrigin: "50% 0%" }}
         initial={reduce ? false : { clipPath: "inset(12% 8% 12% 8%)", scale: 1.08 }}
         animate={{ clipPath: "inset(0% 0% 0% 0%)", scale: 1 }}
@@ -54,10 +56,15 @@ export function Hero() {
             />
           </picture>
         )}
+        {/* Phones: soft shade under the header, and the photo fading into the dark text area below. */}
+        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-ink/45 to-transparent md:hidden" aria-hidden="true" />
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/15 to-ink/35 md:bg-gradient-to-r md:from-ink/65 md:via-ink/20 md:to-transparent" aria-hidden="true" />
+      {/* Phones: the photo (125vw tall) fades into the dark text area. Drawn over the photo edge, 2px past it,
+          so the half-pixel bottom edge of the photo can never show as a light line. */}
+      <div className="absolute inset-x-0 top-[56.25vw] h-[calc(68.75vw+2px)] bg-gradient-to-t from-ink from-[3px] via-ink/55 to-transparent md:hidden" aria-hidden="true" />
+      <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/65 via-ink/20 to-transparent md:block" aria-hidden="true" />
 
-      <div className="container-rm relative flex h-full flex-col justify-end pb-14 pt-28 md:justify-center md:pb-0">
+      <div className="container-rm relative -mt-[46vw] flex flex-col pb-14 md:mt-0 md:h-full md:justify-center md:pb-0 md:pt-28">
         <h1 className="display max-w-[11ch] text-[3.4rem] leading-[0.95] xs:text-6xl md:text-7xl xl:text-[7.5rem]">
           {words.map((w, i) => (
             <span key={`${w}-${i}`} className="inline-block overflow-hidden pb-[0.12em] align-bottom">

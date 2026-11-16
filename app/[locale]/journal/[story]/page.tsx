@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/PageHeader";
 import { AssetImage } from "@/components/ui/AssetImage";
@@ -56,7 +57,7 @@ export default async function StoryPage({ params }: PageProps<"/[locale]/journal
             </p>
           ))}
           <Link href={localePath(locale, "/journal/")} className="btn btn-outline mt-10">
-            ← {c.backToJournal}
+            <ArrowLeft size={16} aria-hidden="true" /> {c.backToJournal}
           </Link>
         </div>
       </div>

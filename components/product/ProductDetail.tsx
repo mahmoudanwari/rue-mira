@@ -36,11 +36,14 @@ export function ProductDetail({ product: seed, all }: { product: Product; all: P
       <div className="container-rm mt-6 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
         <Gallery product={product} priority />
         <div className="lg:sticky lg:top-24 lg:self-start">
-          <p className="eyebrow">
-            {t.categories[product.category].label}
-            {product.isNew && <span className="ml-3 rounded-full bg-rose px-2 py-0.5 text-ink">{t.common.newLabel}</span>}
-          </p>
-          <h1 className="display mt-3 text-5xl md:text-6xl">{product.copy.name}</h1>
+          <div className="flex flex-wrap items-start gap-x-4 gap-y-2">
+            <h1 className="display text-5xl text-balance md:text-6xl">{product.copy.name}</h1>
+            {product.isNew && (
+              <span className="mt-2 rounded-full bg-rose px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink md:mt-3">
+                {t.common.newLabel}
+              </span>
+            )}
+          </div>
           <p className="mt-4 leading-relaxed text-ink/80">{product.copy.description}</p>
           <p className="mt-3 text-xs text-taupe">{fill(t.product.photoNote, { color: product.copy.color })}</p>
           <div className="mt-8">
@@ -54,7 +57,7 @@ export function ProductDetail({ product: seed, all }: { product: Product; all: P
                 <dt className="text-taupe">{t.common.colour}</dt>
                 <dd>{product.copy.color}</dd>
                 <dt className="text-taupe">{t.common.material}</dt>
-                <dd className="capitalize">{product.copy.material}</dd>
+                <dd className="first-cap">{product.copy.material}</dd>
                 <dt className="text-taupe">{t.common.sizes}</dt>
                 <dd>{product.sizes.map((s) => (s === "One Size" ? t.common.oneSize : s)).join(" · ")}</dd>
                 <dt className="text-taupe">ID</dt>
@@ -62,7 +65,7 @@ export function ProductDetail({ product: seed, all }: { product: Product; all: P
               </dl>
             </Disclosure>
             <Disclosure title={t.product.materialCare}>
-              <p className="capitalize-first">{product.copy.material}.</p>
+              <p className="first-cap">{product.copy.material}.</p>
               <p className="mt-2">{t.product.care}</p>
             </Disclosure>
             <Disclosure title={t.pages.deliveryReturns}>

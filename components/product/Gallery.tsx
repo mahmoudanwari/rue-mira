@@ -37,7 +37,7 @@ export function Gallery({ product, priority = false, enableZoom = true }: { prod
 
   return (
     <section aria-label={t.product.gallery} aria-roledescription="carousel" onKeyDown={onKey} className="flex flex-col gap-3 md:flex-row-reverse">
-      <div className="relative flex-1">
+      <div className="relative flex-1 lg:max-w-[calc((100svh_-_12.5rem)*0.75)]">
         <div className="relative overflow-hidden rounded-sm" style={{ aspectRatio: "3 / 4" }}>
           <AnimatePresence initial={false} mode="popLayout">
             <motion.div

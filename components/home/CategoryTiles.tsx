@@ -60,7 +60,7 @@ export function CategoryTiles() {
                 alt=""
                 ratio="3 / 4"
                 sizes="(min-width: 768px) 24vw, 62vw"
-                imgClassName="scale-[1.06] object-[50%_40%] transition-[object-position,transform] duration-[1.4s] ease-[var(--ease-editorial)] group-hover:scale-[1.06] group-hover:object-[50%_15%] motion-reduce:transition-none"
+                imgClassName="transition-transform duration-[1.4s] ease-[var(--ease-editorial)] [@media(hover:hover)]:group-hover:scale-[1.04] motion-reduce:transition-none"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" aria-hidden="true" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4 text-white">

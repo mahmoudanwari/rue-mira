@@ -142,7 +142,7 @@ export function WeekendEdit() {
     <section aria-labelledby="weekend-title" className="on-dark relative mt-24 bg-ink text-white lg:mt-36 lg:bg-transparent">
       <div className="relative">
         <AssetImage src={IMAGE_MAP.campaigns["campaign-weekend-edit"]} alt="" ratio="16 / 9" sizes="100vw" />
-        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/65 via-ink/15 to-transparent lg:block" aria-hidden="true" />
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-ink/80 via-ink/40 to-transparent lg:block" aria-hidden="true" />
         <div className="container-rm py-10 lg:absolute lg:inset-0 lg:flex lg:items-center lg:py-0">
           <Reveal className="max-w-lg">
             <h2 id="weekend-title" className="display text-5xl lg:text-6xl xl:text-7xl">

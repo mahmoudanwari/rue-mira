@@ -61,7 +61,7 @@ export function CompareView() {
   const rows: { label: string; render: (p: (typeof items)[number]) => React.ReactNode }[] = [
     { label: t.common.category, render: (p) => t.categories[p.category].label },
     { label: t.common.price, render: (p) => <span className="font-semibold tabular-nums">{money(p.price)}</span> },
-    { label: t.common.material, render: (p) => <span className="capitalize">{p.copy.material}</span> },
+    { label: t.common.material, render: (p) => <span className="first-cap inline-block">{p.copy.material}</span> },
     {
       label: t.common.colour,
       render: (p) => (
